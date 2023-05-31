@@ -1,6 +1,6 @@
 import './App.css';
 import { useState } from 'react';
-import Input from './input';
+import Input from './Input';
 
 function App() {
 	const [todo, setTodo] = useState('');
