@@ -1,0 +1,42 @@
+.input-holder {
+	display: flex;
+	width: 100%;
+	background-color: hsl(235, 24%, 19%);
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 40px;
+	border-radius: 5px;
+}
+
+.input {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	background-color: transparent;
+	border: transparent;
+	padding-left: 30px;
+	color: white;
+}
+
+.add-button {
+	width: 100px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 15px;
+}
+
+.add-button img {
+	width: 15px;
+	height: 15px;
+}
+
+input:focus {
+	font-size: 18px;
+	outline: none;
+	border-color: transparent;
+}
+
+input::placeholder {
+	font-size: 14px;
+}

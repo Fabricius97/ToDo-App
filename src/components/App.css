@@ -1,6 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	box-sizing: border-box;
+	height: 100vh;
+	background-color: hsl(235, 21%, 11%);
+	display: flex;
+	flex-direction: column;
+	color: white;
+	overflow: hidden;
+}
+
+.App {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.todoApp {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 600px;
+	width: 100%;
+	padding: 15px;
+	margin-top: 60px;
+}
+
+.backgroundImg {
+	min-width: 100%;
+	display: flex;
+	position: fixed;
+	top: 0;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.App button {
+	cursor: pointer;
 }
