@@ -35,7 +35,7 @@ function App() {
 					<h1>T O D O</h1>
 					<button style={{ backgroundColor: 'transparent', border: 'transparent' }} onClick={toggleMode}>
 						<img
-							src={`./../../images/icon-${isLightMode ? 'moon' : 'sun'}.svg`}
+							src={`./../../public/images/icon-${isLightMode ? 'moon' : 'sun'}.svg`}
 							alt={isLightMode ? 'iconsun' : 'iconmoon'}
 						/>
 					</button>

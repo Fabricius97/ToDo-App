@@ -13,7 +13,7 @@ const Item = ({ text, complete, isLightMode }) => {
 				style={{ backgroundColor: 'transparent', border: 'transparent' }}
 			>
 				<img
-					src="./../../images/icon-check.svg"
+					src="./../../public/images/icon-check.svg"
 					alt="checkIcon"
 					style={{ filter: `brightness(${isLightMode ? '0.2' : '1'})` }}
 				/>

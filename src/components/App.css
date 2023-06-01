@@ -20,11 +20,11 @@ body {
 }
 
 .light-mode {
-	background-image: url('./../../images/bg-desktop-light.jpg');
+	background-image: url('./../../public/images/bg-desktop-light.jpg');
 }
 
 .dark-mode {
-	background-image: url('./../../images/bg-desktop-dark.jpg');
+	background-image: url('./../../public/images/bg-desktop-dark.jpg');
 }
 
 .todoApp {
@@ -61,10 +61,10 @@ body {
 
 @media (max-width: 400px) {
 	.dark-mode {
-		background-image: url('./../../images/bg-mobile-dark.jpg');
+		background-image: url('./../../public/images/bg-mobile-dark.jpg');
 	}
 	.light-mode {
-		background-image: url('./../../images/bg-mobile-light.jpg');
+		background-image: url('./../../public/images/bg-mobile-light.jpg');
 	}
 	.backgroundImg {
 		min-width: 80vh;
