@@ -5,47 +5,68 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 18px;
 	box-sizing: border-box;
-	height: 100vh;
-	background-color: hsl(235, 21%, 11%);
-	display: flex;
-	flex-direction: column;
-	color: white;
-	overflow: hidden;
 }
 
 .App {
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	flex-direction: column;
 	align-items: center;
+	color: white;
+	overflow: hidden;
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+}
+
+.light-mode {
+	background-image: url('./../../images/bg-desktop-light.jpg');
+}
+
+.dark-mode {
+	background-image: url('./../../images/bg-desktop-dark.jpg');
 }
 
 .todoApp {
-	position: relative;
+	position: absolute;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	max-width: 600px;
 	width: 100%;
-	padding: 15px;
-	margin-top: 60px;
+	margin: 60px;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 .backgroundImg {
-	min-width: 100%;
-	display: flex;
-	position: fixed;
-	top: 0;
+	min-width: 205vh;
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-size: 100%;
 }
 
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	max-width: 100%;
 	width: 100%;
 }
 
 .App button {
 	cursor: pointer;
+}
+
+@media (max-width: 400px) {
+	.dark-mode {
+		background-image: url('./../../images/bg-mobile-dark.jpg');
+	}
+	.light-mode {
+		background-image: url('./../../images/bg-mobile-light.jpg');
+	}
+	.backgroundImg {
+		min-width: 80vh;
+	}
 }

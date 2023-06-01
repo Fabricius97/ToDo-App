@@ -1,12 +1,12 @@
 .input-holder {
 	display: flex;
 	width: 100%;
-	background-color: hsl(235, 24%, 19%);
 	height: 50px;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 40px;
 	border-radius: 5px;
+	background-color: hsl(235, 24%, 19%);
 }
 
 .input {
@@ -16,7 +16,6 @@
 	background-color: transparent;
 	border: transparent;
 	padding-left: 30px;
-	color: white;
 }
 
 .add-button {
