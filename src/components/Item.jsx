@@ -1,5 +1,6 @@
 import React from 'react';
 import './Item.css';
+import iconCheck from './../../public/images/icon-check.svg';
 
 const Item = ({ text, complete, isLightMode }) => {
 	return (
@@ -12,11 +13,7 @@ const Item = ({ text, complete, isLightMode }) => {
 				onClick={() => complete(text)}
 				style={{ backgroundColor: 'transparent', border: 'transparent' }}
 			>
-				<img
-					src="./../../public/images/icon-check.svg"
-					alt="checkIcon"
-					style={{ filter: `brightness(${isLightMode ? '0.2' : '1'})` }}
-				/>
+				<img src={iconCheck} alt="checkIcon" style={{ filter: `brightness(${isLightMode ? '0.2' : '1'})` }} />
 			</button>
 		</div>
 	);

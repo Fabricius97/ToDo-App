@@ -2,6 +2,8 @@ import './App.css';
 import { useState } from 'react';
 import Input from './input';
 import List from './List';
+import iconSun from './../../public/images/icon-sun.svg';
+import iconMoon from './../../public/images/icon-moon.svg';
 
 function App() {
 	const [todo, setTodo] = useState('');
@@ -34,10 +36,7 @@ function App() {
 				<div className="header">
 					<h1>T O D O</h1>
 					<button style={{ backgroundColor: 'transparent', border: 'transparent' }} onClick={toggleMode}>
-						<img
-							src={`./../../public/images/icon-${isLightMode ? 'moon' : 'sun'}.svg`}
-							alt={isLightMode ? 'iconsun' : 'iconmoon'}
-						/>
+						<img src={isLightMode ? iconMoon : iconSun} alt={isLightMode ? 'iconsun' : 'iconmoon'} />
 					</button>
 				</div>
 				<Input setTodo={setTodo} todo={todo} addTodo={addTodo} isLightMode={isLightMode} />
