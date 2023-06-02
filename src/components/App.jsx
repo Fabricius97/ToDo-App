@@ -16,8 +16,12 @@ function App() {
 	};
 
 	const complete = (text) => {
-		const uncompletedTodos = todos.filter((todo) => todo !== text);
-		setTodos(uncompletedTodos);
+		const updatedTodos = [...todos];
+		const index = updatedTodos.findIndex((todo) => todo === text);
+		if (index !== -1) {
+			updatedTodos.splice(index, 1);
+			setTodos(updatedTodos);
+		}
 	};
 
 	const toggleMode = () => {
