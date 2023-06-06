@@ -18,13 +18,11 @@
 	align-items: center;
 	text-overflow: ellipsis;
 	box-sizing: border-box;
-	position: relative;
 }
 
 .container-button {
-	position: absolute;
 	right: 0px;
-	padding-right: 20px;
+	padding-right: 10px;
 }
 
 .complete-button {

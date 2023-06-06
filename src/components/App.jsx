@@ -1,9 +1,9 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Input from './input';
 import List from './List';
-import iconSun from './../../public/images/icon-sun.svg';
-import iconMoon from './../../public/images/icon-moon.svg';
+import iconSun from '/images/icon-sun.svg';
+import iconMoon from '/images/icon-moon.svg';
 
 function App() {
 	const [todo, setTodo] = useState('');
@@ -11,6 +11,7 @@ function App() {
 	const [isLightMode, setIsLightMode] = useState(false);
 
 	const addTodo = () => {
+		console.log(todos);
 		if (todo !== '') setTodos([...todos, todo]);
 		setTodo('');
 	};
@@ -35,16 +36,18 @@ function App() {
 				backgroundColor: `${isLightMode ? 'hsl(0,0%,100%)' : 'hsl(235, 21%, 11%)'}`
 			}}
 		>
-			<img className={`backgroundImg ${isLightMode ? 'light-mode' : 'dark-mode'}`} alt="" />
-			<div className="todoApp">
-				<div className="header">
-					<h1>T O D O</h1>
-					<button style={{ backgroundColor: 'transparent', border: 'transparent' }} onClick={toggleMode}>
-						<img src={isLightMode ? iconMoon : iconSun} alt={isLightMode ? 'iconsun' : 'iconmoon'} />
-					</button>
+			<div className="container">
+				<div className={`backgroundImg ${isLightMode ? 'light-mode' : 'dark-mode'}`}></div>
+				<div className="todoApp">
+					<div className="header">
+						<h1>T O D O</h1>
+						<button style={{ backgroundColor: 'transparent', border: 'transparent' }} onClick={toggleMode}>
+							<img src={isLightMode ? iconMoon : iconSun} alt={isLightMode ? 'iconsun' : 'iconmoon'} />
+						</button>
+					</div>
+					<Input setTodo={setTodo} todo={todo} addTodo={addTodo} isLightMode={isLightMode} />
+					<List todos={todos} complete={complete} isLightMode={isLightMode} />
 				</div>
-				<Input setTodo={setTodo} todo={todo} addTodo={addTodo} isLightMode={isLightMode} />
-				<List todos={todos} complete={complete} isLightMode={isLightMode} />
 			</div>
 		</div>
 	);

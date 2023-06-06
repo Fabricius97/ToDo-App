@@ -1,6 +1,6 @@
 import React from 'react';
 import './Item.css';
-import iconCheck from './../../public/images/icon-check.svg';
+import iconCheck from '/images/icon-check.svg';
 
 const Item = ({ text, complete, isLightMode }) => {
 	return (
