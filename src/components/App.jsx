@@ -1,5 +1,5 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Input from './input';
 import List from './List';
 import iconSun from '/images/icon-sun.svg';
